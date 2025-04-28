@@ -21,7 +21,7 @@ cv.imshow('gray',gray)
 
 
 
-# so for making the image blurr, we use GaussianBlur() function which takes image, total blurr required, some border_default value
+# so for making the image blurr, we use GaussianBlur() method which takes image, total blurr required, some border_default value
 # as arguments and this makes the image blurr.
 # this method is used to reducee noise and details in image.
 # (7,7) is size of Gaussian Kernel(width and height). large kernel size means strong blurr.
@@ -63,7 +63,7 @@ cv.imshow('eroded',eroded)
 
 
 
-# Resize method 
+# Resize method is used to resize image no matter how much quality degrades.
 
 resized = cv.resize(image, (500,500), interpolation=cv.INTER_CUBIC)
 cv.imshow('resize',resized)
